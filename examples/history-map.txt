@@ -1,0 +1,765 @@
+user=> (pprint history-map)
+([:index_rev nil]
+ [:filt nil]
+ [:mid_index nil]
+ [:id
+  "datomic:free://localhost:4334/5e4aa127-e545-4b94-8155-be952505719d"]
+ [:asOfT nil]
+ [:index
+  {:eavt
+   #{{:key #datom[0 10 :db.part/db 13194139533312 true],
+      :seg #uuid "5e4aa12f-2a37-49f0-84ba-279256f542c0",
+      :count 223}},
+   :avet
+   #{{:key #datom[1 10 :db/add 13194139533312 true],
+      :seg #uuid "5e4aa12f-3b44-4c34-b6af-fe9b6fa3f232",
+      :count 55}
+     {:key #datom[61 39 :bigdec 13194139533368 true],
+      :seg #uuid "5e4aa12f-0b4e-45da-b877-13423c82aecc",
+      :count 14}
+     {:key
+      #datom[13194139533366 50 #inst "1970-01-01T00:00:00.000-00:00" 13194139533366 true],
+      :seg #uuid "5e4aa12f-809f-4ca4-8e13-887244d894bd",
+      :count 3}},
+   :aevt
+   #{{:key #datom[0 10 :db.part/db 13194139533312 true],
+      :seg #uuid "5e4aa12f-20a8-4c87-b8ac-779361abd64c",
+      :count 55}
+     {:key #datom[0 11 0 13194139533366 true],
+      :seg #uuid "5e4aa12f-55c0-4bc9-83fc-8986643bf580",
+      :count 3}
+     {:key #datom[0 12 20 13194139533366 true],
+      :seg #uuid "5e4aa12f-695e-4b05-946a-335c04ea8f02",
+      :count 14}
+     {:key #datom[0 13 8 13194139533366 true],
+      :seg #uuid "5e4aa12f-c369-4bff-86c1-a6dcc3a78869",
+      :count 25}
+     {:key #datom[0 14 54 13194139533366 true],
+      :seg #uuid "5e4aa12f-a088-4baf-831e-882618813756",
+      :count 2}
+     {:key #datom[20 39 :ref 13194139533366 true],
+      :seg #uuid "5e4aa12f-2933-4116-b45a-3c4c62394ae6",
+      :count 14}
+     {:key #datom[8 40 24 13194139533366 true],
+      :seg #uuid "5e4aa12f-04c8-4c91-a0e4-af06a0b1e431",
+      :count 25}
+     {:key #datom[8 41 35 13194139533366 true],
+      :seg #uuid "5e4aa12f-1a37-4938-970b-3858451dfec7",
+      :count 25}
+     {:key #datom[10 42 38 13194139533366 true],
+      :seg #uuid "5e4aa12f-bb5e-4bf6-ba0b-b2b556185a48",
+      :count 1}
+     {:key #datom[39 44 true 13194139533366 true],
+      :seg #uuid "5e4aa12f-c3d9-4531-bb55-dfe837c3a7dc",
+      :count 2}
+     {:key #datom[54 46 48 13194139533366 true],
+      :seg #uuid "5e4aa12f-1470-46f7-81e5-fd45decd11b4",
+      :count 2}
+     {:key
+      #datom[54 47 "(clojure.core/fn [db e] (datomic.builtins/build-retract-args db e))" 13194139533366 true],
+      :seg #uuid "5e4aa12f-bf4a-43d3-9c94-427fbff4b1fc",
+      :count 2}
+     {:key
+      #datom[13194139533366 50 #inst "1970-01-01T00:00:00.000-00:00" 13194139533366 true],
+      :seg #uuid "5e4aa12f-87a2-43e8-895d-16adcb193912",
+      :count 3}
+     {:key #datom[47 51 true 13194139533366 true],
+      :seg #uuid "5e4aa12f-9e3f-4a51-97a4-9ed70c1f73e4",
+      :count 2}
+     {:key
+      #datom[0 62 "Name of the system partition. The system partition includes the core of datomic, as well as user schemas: type definitions, attribute definitions, partition definitions, and data function definitions." 13194139533375 true],
+      :seg #uuid "5e4aa12f-beb3-41b6-b4f7-c7029561a8be",
+      :count 48}},
+   :raet
+   #{{:key #datom[0 11 0 13194139533366 true],
+      :seg #uuid "5e4aa12f-2151-4714-ad39-09abe563b483",
+      :count 97}},
+   :fulltext nil}]
+ [:__meta nil]
+ [:indexingNextT nil]
+ [:indexing nil]
+ [:keys
+  {0 :db.part/db,
+   65 :item/count,
+   62 :db/doc,
+   59 :db.type/uri,
+   20 :db.type/ref,
+   58 :db.type/float,
+   60 :db.type/bigint,
+   27 :db.type/bytes,
+   1 :db/add,
+   24 :db.type/boolean,
+   55 :db.fn/cas,
+   39 :fressian/tag,
+   46 :db/lang,
+   4 :db.part/user,
+   54 :db.fn/retractEntity,
+   15 :db/excise,
+   48 :db.lang/clojure,
+   50 :db/txInstant,
+   21 :db.type/keyword,
+   40 :db/valueType,
+   56 :db.type/uuid,
+   13 :db.install/attribute,
+   22 :db.type/long,
+   36 :db.cardinality/many,
+   41 :db/cardinality,
+   43 :db/isComponent,
+   61 :db.type/bigdec,
+   44 :db/index,
+   64 :item/description,
+   51 :db/fulltext,
+   25 :db.type/instant,
+   17 :db.excise/beforeT,
+   3 :db.part/tx,
+   12 :db.install/valueType,
+   2 :db/retract,
+   66 :tx/error,
+   23 :db.type/string,
+   47 :db/code,
+   35 :db.cardinality/one,
+   19 :db.alter/attribute,
+   57 :db.type/double,
+   11 :db.install/partition,
+   9 :db.sys/reId,
+   14 :db.install/function,
+   45 :db/noHistory,
+   53 :db.bootstrap/part,
+   26 :db.type/fn,
+   16 :db.excise/attrs,
+   38 :db.unique/identity,
+   10 :db/ident,
+   18 :db.excise/before,
+   52 :db/fn,
+   42 :db/unique,
+   37 :db.unique/value,
+   63 :item/id,
+   8 :db.sys/partiallyIndexed,
+   49 :db.lang/java}]
+ [:ids
+  {:db.type/instant 25,
+   :db/excise 15,
+   :item/id 63,
+   :db.type/boolean 24,
+   :db.unique/identity 38,
+   :db/fn 52,
+   :db.type/bytes 27,
+   :db.type/uri 59,
+   :db/index 44,
+   :item/description 64,
+   :db.type/uuid 56,
+   :db/unique 42,
+   :db.part/user 4,
+   :db.lang/clojure 48,
+   :db.excise/beforeT 17,
+   :db.part/db 0,
+   :db.bootstrap/part 53,
+   :db.sys/reId 9,
+   :item/count 65,
+   :db/valueType 40,
+   :db.type/string 23,
+   :db.type/keyword 21,
+   :db/txInstant 50,
+   :db.type/ref 20,
+   :db.type/bigdec 61,
+   :db/noHistory 45,
+   :db/isComponent 43,
+   :db.type/float 58,
+   :db/cas 55,
+   :db/lang 46,
+   :db/fulltext 51,
+   :db.fn/retractEntity 54,
+   :db.unique/value 37,
+   :db.type/bigint 60,
+   :db/retractEntity 54,
+   :db/retract 2,
+   :db.lang/java 49,
+   :db.part/tx 3,
+   :db.fn/cas 55,
+   :db/cardinality 41,
+   :db/doc 62,
+   :db.excise/before 18,
+   :db/ident 10,
+   :db/code 47,
+   :db/add 1,
+   :db.type/double 57,
+   :db.type/long 22,
+   :db.cardinality/many 36,
+   :db.install/valueType 12,
+   :db.alter/attribute 19,
+   :db.install/function 14,
+   :db.install/partition 11,
+   :tx/error 66,
+   :db.install/attribute 13,
+   :db.type/fn 26,
+   :db.cardinality/one 35,
+   :db.excise/attrs 16,
+   :fressian/tag 39,
+   :db.sys/partiallyIndexed 8}]
+ [:__extmap nil]
+ [:index_root_id nil]
+ [:memlog
+  {:txes
+   [{:t 1000,
+     :data
+     [#datom[63 10 :item/id 13194139534312 true]
+      #datom[63 40 23 13194139534312 true]
+      #datom[63 41 35 13194139534312 true]
+      #datom[63 42 38 13194139534312 true]
+      #datom[64 10 :item/description 13194139534312 true]
+      #datom[64 40 23 13194139534312 true]
+      #datom[64 41 35 13194139534312 true]
+      #datom[64 51 true 13194139534312 true]
+      #datom[65 10 :item/count 13194139534312 true]
+      #datom[65 40 22 13194139534312 true]
+      #datom[65 41 35 13194139534312 true]
+      #datom[65 44 true 13194139534312 true]
+      #datom[66 10 :tx/error 13194139534312 true]
+      #datom[66 40 24 13194139534312 true]
+      #datom[66 44 true 13194139534312 true]
+      #datom[66 41 35 13194139534312 true]
+      #datom[13194139534312 50 #inst "2012-01-01T00:00:00.000-00:00" 13194139534312 true]
+      #datom[0 13 65 13194139534312 true]
+      #datom[0 13 64 13194139534312 true]
+      #datom[0 13 66 13194139534312 true]
+      #datom[0 13 63 13194139534312 true]]}
+    {:t 1001,
+     :data
+     [#datom[17592186045418 63 "DLC-042" 13194139534313 true]
+      #datom[17592186045418 64 "Dilitihium Crystals" 13194139534313 true]
+      #datom[17592186045418 65 100 13194139534313 true]
+      #datom[13194139534313 50 #inst "2013-01-01T00:00:00.000-00:00" 13194139534313 true]]}
+    {:t 1003,
+     :data
+     [#datom[17592186045418 65 250 13194139534315 true]
+      #datom[17592186045418 65 100 13194139534315 false]
+      #datom[13194139534315 50 #inst "2013-02-01T00:00:00.000-00:00" 13194139534315 true]]}
+    {:t 1004,
+     :data
+     [#datom[17592186045418 65 50 13194139534316 true]
+      #datom[17592186045418 65 250 13194139534316 false]
+      #datom[13194139534316 50 #inst "2014-02-28T00:00:00.000-00:00" 13194139534316 true]]}
+    {:t 1005,
+     :data
+     [#datom[17592186045418 65 9999 13194139534317 true]
+      #datom[17592186045418 65 50 13194139534317 false]
+      #datom[13194139534317 50 #inst "2014-04-01T00:00:00.000-00:00" 13194139534317 true]
+      #datom[13194139534317 66 true 13194139534317 true]]}
+    {:t 1006,
+     :data
+     [#datom[17592186045418 65 100 13194139534318 true]
+      #datom[17592186045418 65 9999 13194139534318 false]
+      #datom[13194139534318 50 #inst "2014-05-15T00:00:00.000-00:00" 13194139534318 true]]}]}]
+ [:sinceT nil]
+ [:raw true]
+ [:basisT 1006]
+ [:memidx
+  {:eavt
+   #{#datom[0 13 63 13194139534312 true]
+     #datom[0 13 64 13194139534312 true]
+     #datom[0 13 65 13194139534312 true]
+     #datom[0 13 66 13194139534312 true]
+     #datom[63 10 :item/id 13194139534312 true]
+     #datom[63 40 23 13194139534312 true]
+     #datom[63 41 35 13194139534312 true]
+     #datom[63 42 38 13194139534312 true]
+     #datom[64 10 :item/description 13194139534312 true]
+     #datom[64 40 23 13194139534312 true]
+     #datom[64 41 35 13194139534312 true]
+     #datom[64 51 true 13194139534312 true]
+     #datom[65 10 :item/count 13194139534312 true]
+     #datom[65 40 22 13194139534312 true]
+     #datom[65 41 35 13194139534312 true]
+     #datom[65 44 true 13194139534312 true]
+     #datom[66 10 :tx/error 13194139534312 true]
+     #datom[66 40 24 13194139534312 true]
+     #datom[66 41 35 13194139534312 true]
+     #datom[66 44 true 13194139534312 true]
+     #datom[13194139534312 50 #inst "2012-01-01T00:00:00.000-00:00" 13194139534312 true]
+     #datom[13194139534313 50 #inst "2013-01-01T00:00:00.000-00:00" 13194139534313 true]
+     #datom[13194139534315 50 #inst "2013-02-01T00:00:00.000-00:00" 13194139534315 true]
+     #datom[13194139534316 50 #inst "2014-02-28T00:00:00.000-00:00" 13194139534316 true]
+     #datom[13194139534317 50 #inst "2014-04-01T00:00:00.000-00:00" 13194139534317 true]
+     #datom[13194139534317 66 true 13194139534317 true]
+     #datom[13194139534318 50 #inst "2014-05-15T00:00:00.000-00:00" 13194139534318 true]
+     #datom[17592186045418 63 "DLC-042" 13194139534313 true]
+     #datom[17592186045418 64 "Dilitihium Crystals" 13194139534313 true]
+     #datom[17592186045418 65 50 13194139534317 false]
+     #datom[17592186045418 65 50 13194139534316 true]
+     #datom[17592186045418 65 100 13194139534318 true]
+     #datom[17592186045418 65 100 13194139534315 false]
+     #datom[17592186045418 65 100 13194139534313 true]
+     #datom[17592186045418 65 250 13194139534316 false]
+     #datom[17592186045418 65 250 13194139534315 true]
+     #datom[17592186045418 65 9999 13194139534318 false]
+     #datom[17592186045418 65 9999 13194139534317 true]},
+   :avet
+   #{#datom[65 10 :item/count 13194139534312 true]
+     #datom[64 10 :item/description 13194139534312 true]
+     #datom[63 10 :item/id 13194139534312 true]
+     #datom[66 10 :tx/error 13194139534312 true]
+     #datom[13194139534312 50 #inst "2012-01-01T00:00:00.000-00:00" 13194139534312 true]
+     #datom[13194139534313 50 #inst "2013-01-01T00:00:00.000-00:00" 13194139534313 true]
+     #datom[13194139534315 50 #inst "2013-02-01T00:00:00.000-00:00" 13194139534315 true]
+     #datom[13194139534316 50 #inst "2014-02-28T00:00:00.000-00:00" 13194139534316 true]
+     #datom[13194139534317 50 #inst "2014-04-01T00:00:00.000-00:00" 13194139534317 true]
+     #datom[13194139534318 50 #inst "2014-05-15T00:00:00.000-00:00" 13194139534318 true]
+     #datom[17592186045418 63 "DLC-042" 13194139534313 true]
+     #datom[17592186045418 65 50 13194139534317 false]
+     #datom[17592186045418 65 50 13194139534316 true]
+     #datom[17592186045418 65 100 13194139534318 true]
+     #datom[17592186045418 65 100 13194139534315 false]
+     #datom[17592186045418 65 100 13194139534313 true]
+     #datom[17592186045418 65 250 13194139534316 false]
+     #datom[17592186045418 65 250 13194139534315 true]
+     #datom[17592186045418 65 9999 13194139534318 false]
+     #datom[17592186045418 65 9999 13194139534317 true]
+     #datom[13194139534317 66 true 13194139534317 true]},
+   :aevt
+   #{#datom[63 10 :item/id 13194139534312 true]
+     #datom[64 10 :item/description 13194139534312 true]
+     #datom[65 10 :item/count 13194139534312 true]
+     #datom[66 10 :tx/error 13194139534312 true]
+     #datom[0 13 63 13194139534312 true]
+     #datom[0 13 64 13194139534312 true]
+     #datom[0 13 65 13194139534312 true]
+     #datom[0 13 66 13194139534312 true]
+     #datom[63 40 23 13194139534312 true]
+     #datom[64 40 23 13194139534312 true]
+     #datom[65 40 22 13194139534312 true]
+     #datom[66 40 24 13194139534312 true]
+     #datom[63 41 35 13194139534312 true]
+     #datom[64 41 35 13194139534312 true]
+     #datom[65 41 35 13194139534312 true]
+     #datom[66 41 35 13194139534312 true]
+     #datom[63 42 38 13194139534312 true]
+     #datom[65 44 true 13194139534312 true]
+     #datom[66 44 true 13194139534312 true]
+     #datom[13194139534312 50 #inst "2012-01-01T00:00:00.000-00:00" 13194139534312 true]
+     #datom[13194139534313 50 #inst "2013-01-01T00:00:00.000-00:00" 13194139534313 true]
+     #datom[13194139534315 50 #inst "2013-02-01T00:00:00.000-00:00" 13194139534315 true]
+     #datom[13194139534316 50 #inst "2014-02-28T00:00:00.000-00:00" 13194139534316 true]
+     #datom[13194139534317 50 #inst "2014-04-01T00:00:00.000-00:00" 13194139534317 true]
+     #datom[13194139534318 50 #inst "2014-05-15T00:00:00.000-00:00" 13194139534318 true]
+     #datom[64 51 true 13194139534312 true]
+     #datom[17592186045418 63 "DLC-042" 13194139534313 true]
+     #datom[17592186045418 64 "Dilitihium Crystals" 13194139534313 true]
+     #datom[17592186045418 65 50 13194139534317 false]
+     #datom[17592186045418 65 50 13194139534316 true]
+     #datom[17592186045418 65 100 13194139534318 true]
+     #datom[17592186045418 65 100 13194139534315 false]
+     #datom[17592186045418 65 100 13194139534313 true]
+     #datom[17592186045418 65 250 13194139534316 false]
+     #datom[17592186045418 65 250 13194139534315 true]
+     #datom[17592186045418 65 9999 13194139534318 false]
+     #datom[17592186045418 65 9999 13194139534317 true]
+     #datom[13194139534317 66 true 13194139534317 true]},
+   :raet
+   #{#datom[65 40 22 13194139534312 true]
+     #datom[63 40 23 13194139534312 true]
+     #datom[64 40 23 13194139534312 true]
+     #datom[66 40 24 13194139534312 true]
+     #datom[63 41 35 13194139534312 true]
+     #datom[64 41 35 13194139534312 true]
+     #datom[65 41 35 13194139534312 true]
+     #datom[66 41 35 13194139534312 true]
+     #datom[63 42 38 13194139534312 true]
+     #datom[0 13 63 13194139534312 true]
+     #datom[0 13 64 13194139534312 true]
+     #datom[0 13 65 13194139534312 true]
+     #datom[0 13 66 13194139534312 true]},
+   :fulltext
+   {64
+    {"_0.tii"
+     #object[com.datomic.lucene.store.RAMFile 0x58afecfd "com.datomic.lucene.store.RAMFile@58afecfd"],
+     "_0.fnm"
+     #object[com.datomic.lucene.store.RAMFile 0x4d79d187 "com.datomic.lucene.store.RAMFile@4d79d187"],
+     "segments.gen"
+     #object[com.datomic.lucene.store.RAMFile 0x3e63bd6b "com.datomic.lucene.store.RAMFile@3e63bd6b"],
+     "_0.nrm"
+     #object[com.datomic.lucene.store.RAMFile 0x48144f1a "com.datomic.lucene.store.RAMFile@48144f1a"],
+     "_0.frq"
+     #object[com.datomic.lucene.store.RAMFile 0x6f7b8ae1 "com.datomic.lucene.store.RAMFile@6f7b8ae1"],
+     "segments_1"
+     #object[com.datomic.lucene.store.RAMFile 0x6c8d8b60 "com.datomic.lucene.store.RAMFile@6c8d8b60"],
+     "_0.fdx"
+     #object[com.datomic.lucene.store.RAMFile 0x4fa6fb7f "com.datomic.lucene.store.RAMFile@4fa6fb7f"],
+     "_0.prx"
+     #object[com.datomic.lucene.store.RAMFile 0x2520010e "com.datomic.lucene.store.RAMFile@2520010e"],
+     "_0.fdt"
+     #object[com.datomic.lucene.store.RAMFile 0x163fbbc9 "com.datomic.lucene.store.RAMFile@163fbbc9"],
+     "_0.tis"
+     #object[com.datomic.lucene.store.RAMFile 0x1669f4e5 "com.datomic.lucene.store.RAMFile@1669f4e5"]}}}]
+ [:indexBasisT 63]
+ [:nextT 1007]
+ [:history {:eavt nil, :avet nil, :aevt nil, :raet nil, :fulltext nil}]
+ [:elements
+  [{:id 0, :kw :db.part/db}
+   nil
+   nil
+   {:id 3, :kw :db.part/tx}
+   {:id 4, :kw :db.part/user}
+   nil
+   nil
+   nil
+   {:id 8,
+    :kw :db.sys/partiallyIndexed,
+    :vtypeid 24,
+    :cardinality 35,
+    :isComponent false,
+    :unique nil,
+    :index false,
+    :storageHasAVET false,
+    :needsAVET false,
+    :noHistory false,
+    :fulltext false}
+   {:id 9,
+    :kw :db.sys/reId,
+    :vtypeid 20,
+    :cardinality 35,
+    :isComponent false,
+    :unique nil,
+    :index false,
+    :storageHasAVET false,
+    :needsAVET false,
+    :noHistory false,
+    :fulltext false}
+   {:id 10,
+    :kw :db/ident,
+    :vtypeid 21,
+    :cardinality 35,
+    :isComponent false,
+    :unique 38,
+    :index false,
+    :storageHasAVET true,
+    :needsAVET true,
+    :noHistory false,
+    :fulltext false}
+   {:id 11,
+    :kw :db.install/partition,
+    :vtypeid 20,
+    :cardinality 36,
+    :isComponent false,
+    :unique nil,
+    :index false,
+    :storageHasAVET false,
+    :needsAVET false,
+    :noHistory false,
+    :fulltext false}
+   {:id 12,
+    :kw :db.install/valueType,
+    :vtypeid 20,
+    :cardinality 36,
+    :isComponent false,
+    :unique nil,
+    :index false,
+    :storageHasAVET false,
+    :needsAVET false,
+    :noHistory false,
+    :fulltext false}
+   {:id 13,
+    :kw :db.install/attribute,
+    :vtypeid 20,
+    :cardinality 36,
+    :isComponent false,
+    :unique nil,
+    :index false,
+    :storageHasAVET false,
+    :needsAVET false,
+    :noHistory false,
+    :fulltext false}
+   {:id 14,
+    :kw :db.install/function,
+    :vtypeid 20,
+    :cardinality 36,
+    :isComponent false,
+    :unique nil,
+    :index false,
+    :storageHasAVET false,
+    :needsAVET false,
+    :noHistory false,
+    :fulltext false}
+   {:id 15,
+    :kw :db/excise,
+    :vtypeid 20,
+    :cardinality 35,
+    :isComponent false,
+    :unique nil,
+    :index false,
+    :storageHasAVET false,
+    :needsAVET false,
+    :noHistory false,
+    :fulltext false}
+   {:id 16,
+    :kw :db.excise/attrs,
+    :vtypeid 20,
+    :cardinality 36,
+    :isComponent false,
+    :unique nil,
+    :index false,
+    :storageHasAVET false,
+    :needsAVET false,
+    :noHistory false,
+    :fulltext false}
+   {:id 17,
+    :kw :db.excise/beforeT,
+    :vtypeid 22,
+    :cardinality 35,
+    :isComponent false,
+    :unique nil,
+    :index false,
+    :storageHasAVET false,
+    :needsAVET false,
+    :noHistory false,
+    :fulltext false}
+   {:id 18,
+    :kw :db.excise/before,
+    :vtypeid 25,
+    :cardinality 35,
+    :isComponent false,
+    :unique nil,
+    :index false,
+    :storageHasAVET false,
+    :needsAVET false,
+    :noHistory false,
+    :fulltext false}
+   {:id 19,
+    :kw :db.alter/attribute,
+    :vtypeid 20,
+    :cardinality 36,
+    :isComponent false,
+    :unique nil,
+    :index false,
+    :storageHasAVET false,
+    :needsAVET false,
+    :noHistory false,
+    :fulltext false}
+   {:id 20, :kw :db.type/ref, :fressian-tag :ref}
+   {:id 21, :kw :db.type/keyword, :fressian-tag :key}
+   {:id 22, :kw :db.type/long, :fressian-tag :int}
+   {:id 23, :kw :db.type/string, :fressian-tag :string}
+   {:id 24, :kw :db.type/boolean, :fressian-tag :bool}
+   {:id 25, :kw :db.type/instant, :fressian-tag :inst}
+   {:id 26, :kw :db.type/fn, :fressian-tag :datomic/fn}
+   {:id 27, :kw :db.type/bytes, :fressian-tag :bytes}
+   nil
+   nil
+   nil
+   nil
+   nil
+   nil
+   nil
+   nil
+   nil
+   nil
+   nil
+   {:id 39,
+    :kw :fressian/tag,
+    :vtypeid 21,
+    :cardinality 35,
+    :isComponent false,
+    :unique nil,
+    :index true,
+    :storageHasAVET true,
+    :needsAVET true,
+    :noHistory false,
+    :fulltext false}
+   {:id 40,
+    :kw :db/valueType,
+    :vtypeid 20,
+    :cardinality 35,
+    :isComponent false,
+    :unique nil,
+    :index false,
+    :storageHasAVET false,
+    :needsAVET false,
+    :noHistory false,
+    :fulltext false}
+   {:id 41,
+    :kw :db/cardinality,
+    :vtypeid 20,
+    :cardinality 35,
+    :isComponent false,
+    :unique nil,
+    :index false,
+    :storageHasAVET false,
+    :needsAVET false,
+    :noHistory false,
+    :fulltext false}
+   {:id 42,
+    :kw :db/unique,
+    :vtypeid 20,
+    :cardinality 35,
+    :isComponent false,
+    :unique nil,
+    :index false,
+    :storageHasAVET false,
+    :needsAVET false,
+    :noHistory false,
+    :fulltext false}
+   {:id 43,
+    :kw :db/isComponent,
+    :vtypeid 24,
+    :cardinality 35,
+    :isComponent false,
+    :unique nil,
+    :index false,
+    :storageHasAVET false,
+    :needsAVET false,
+    :noHistory false,
+    :fulltext false}
+   {:id 44,
+    :kw :db/index,
+    :vtypeid 24,
+    :cardinality 35,
+    :isComponent false,
+    :unique nil,
+    :index false,
+    :storageHasAVET false,
+    :needsAVET false,
+    :noHistory false,
+    :fulltext false}
+   {:id 45,
+    :kw :db/noHistory,
+    :vtypeid 24,
+    :cardinality 35,
+    :isComponent false,
+    :unique nil,
+    :index false,
+    :storageHasAVET false,
+    :needsAVET false,
+    :noHistory false,
+    :fulltext false}
+   {:id 46,
+    :kw :db/lang,
+    :vtypeid 20,
+    :cardinality 35,
+    :isComponent false,
+    :unique nil,
+    :index false,
+    :storageHasAVET false,
+    :needsAVET false,
+    :noHistory false,
+    :fulltext false}
+   {:id 47,
+    :kw :db/code,
+    :vtypeid 23,
+    :cardinality 35,
+    :isComponent false,
+    :unique nil,
+    :index false,
+    :storageHasAVET false,
+    :needsAVET false,
+    :noHistory false,
+    :fulltext true}
+   nil
+   nil
+   {:id 50,
+    :kw :db/txInstant,
+    :vtypeid 25,
+    :cardinality 35,
+    :isComponent false,
+    :unique nil,
+    :index true,
+    :storageHasAVET true,
+    :needsAVET true,
+    :noHistory false,
+    :fulltext false}
+   {:id 51,
+    :kw :db/fulltext,
+    :vtypeid 24,
+    :cardinality 35,
+    :isComponent false,
+    :unique nil,
+    :index false,
+    :storageHasAVET false,
+    :needsAVET false,
+    :noHistory false,
+    :fulltext false}
+   {:id 52,
+    :kw :db/fn,
+    :vtypeid 26,
+    :cardinality 35,
+    :isComponent false,
+    :unique nil,
+    :index false,
+    :storageHasAVET false,
+    :needsAVET false,
+    :noHistory false,
+    :fulltext false}
+   nil
+   {:id 54,
+    :kw :db.fn/retractEntity,
+    :lang 48,
+    :code
+    "(clojure.core/fn [db e] (datomic.builtins/build-retract-args db e))",
+    :f
+    #object[user$eval3777$fn__3778 0x5358c8fa "user$eval3777$fn__3778@5358c8fa"]}
+   {:id 55,
+    :kw :db.fn/cas,
+    :lang 48,
+    :code
+    "(clojure.core/fn [db e a ov nv] (datomic.builtins/compare-and-swap db e a ov nv))",
+    :f
+    #object[user$eval3781$fn__3782 0x1a02ebe0 "user$eval3781$fn__3782@1a02ebe0"]}
+   {:id 56, :kw :db.type/uuid, :fressian-tag :uuid}
+   {:id 57, :kw :db.type/double, :fressian-tag :double}
+   {:id 58, :kw :db.type/float, :fressian-tag :float}
+   {:id 59, :kw :db.type/uri, :fressian-tag :uri}
+   {:id 60, :kw :db.type/bigint, :fressian-tag :bigint}
+   {:id 61, :kw :db.type/bigdec, :fressian-tag :bigdec}
+   {:id 62,
+    :kw :db/doc,
+    :vtypeid 23,
+    :cardinality 35,
+    :isComponent false,
+    :unique nil,
+    :index false,
+    :storageHasAVET false,
+    :needsAVET false,
+    :noHistory false,
+    :fulltext true}
+   {:id 63,
+    :kw :item/id,
+    :vtypeid 23,
+    :cardinality 35,
+    :isComponent false,
+    :unique 38,
+    :index false,
+    :storageHasAVET true,
+    :needsAVET true,
+    :noHistory false,
+    :fulltext false}
+   {:id 64,
+    :kw :item/description,
+    :vtypeid 23,
+    :cardinality 35,
+    :isComponent false,
+    :unique nil,
+    :index false,
+    :storageHasAVET false,
+    :needsAVET false,
+    :noHistory false,
+    :fulltext true}
+   {:id 65,
+    :kw :item/count,
+    :vtypeid 22,
+    :cardinality 35,
+    :isComponent false,
+    :unique nil,
+    :index true,
+    :storageHasAVET true,
+    :needsAVET true,
+    :noHistory false,
+    :fulltext false}
+   {:id 66,
+    :kw :tx/error,
+    :vtypeid 24,
+    :cardinality 35,
+    :isComponent false,
+    :unique nil,
+    :index true,
+    :storageHasAVET true,
+    :needsAVET true,
+    :noHistory false,
+    :fulltext false}]])

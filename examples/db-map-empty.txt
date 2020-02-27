@@ -1,0 +1,527 @@
+user=> (pprint (map (juxt identity (fn [x] (x ddb))) (keys ddb)))
+([:index_rev 0]
+ [:ids
+  {:db.type/instant 25,
+   :db/excise 15,
+   :db.type/boolean 24,
+   :db.unique/identity 38,
+   :db/fn 52,
+   :db.type/bytes 27,
+   :db.type/uri 59,
+   :db/index 44,
+   :db.type/uuid 56,
+   :db/unique 42,
+   :db.part/user 4,
+   :db.lang/clojure 48,
+   :db.excise/beforeT 17,
+   :db.part/db 0,
+   :db.bootstrap/part 53,
+   :db.sys/reId 9,
+   :db/valueType 40,
+   :db.type/string 23,
+   :db.type/keyword 21,
+   :db/txInstant 50,
+   :db.type/ref 20,
+   :db.type/bigdec 61,
+   :db/noHistory 45,
+   :db/isComponent 43,
+   :db.type/float 58,
+   :db/cas 55,
+   :db/lang 46,
+   :db/fulltext 51,
+   :db.fn/retractEntity 54,
+   :db.unique/value 37,
+   :db.type/bigint 60,
+   :db/retractEntity 54,
+   :db/retract 2,
+   :db.lang/java 49,
+   :db.part/tx 3,
+   :db.fn/cas 55,
+   :db/cardinality 41,
+   :db/doc 62,
+   :db.excise/before 18,
+   :db/ident 10,
+   :db/code 47,
+   :db/add 1,
+   :db.type/double 57,
+   :db.type/long 22,
+   :db.cardinality/many 36,
+   :db.install/valueType 12,
+   :db.alter/attribute 19,
+   :db.install/function 14,
+   :db.install/partition 11,
+   :db.install/attribute 13,
+   :db.type/fn 26,
+   :db.cardinality/one 35,
+   :db.excise/attrs 16,
+   :fressian/tag 39,
+   :db.sys/partiallyIndexed 8}]
+ [:filt nil]
+ [:raw nil]
+ [:basisT 63]
+ [:index_root_id #uuid "5e49d93b-619e-45be-b046-3012fece750e"]
+ [:mid_index
+  {:eavt nil, :avet nil, :aevt nil, :raet nil, :fulltext nil}]
+ [:index
+  {:eavt
+   #{{:key #datom[0 10 :db.part/db 13194139533312 true],
+      :seg #uuid "5e49d93b-5593-4657-8df6-6f13e5b81fc8",
+      :count 223}},
+   :avet
+   #{{:key #datom[1 10 :db/add 13194139533312 true],
+      :seg #uuid "5e49d93b-792b-42be-8b32-45cfd853d7bb",
+      :count 55}
+     {:key #datom[61 39 :bigdec 13194139533368 true],
+      :seg #uuid "5e49d93b-6a8a-46eb-a846-d32ab570f9b7",
+      :count 14}
+     {:key
+      #datom[13194139533366 50 #inst "1970-01-01T00:00:00.000-00:00" 13194139533366 true],
+      :seg #uuid "5e49d93b-b518-4ade-b43c-80d97881d394",
+      :count 3}},
+   :aevt
+   #{{:key #datom[0 10 :db.part/db 13194139533312 true],
+      :seg #uuid "5e49d93b-11a5-43a1-bed6-d67fe3e3ab22",
+      :count 55}
+     {:key #datom[0 11 0 13194139533366 true],
+      :seg #uuid "5e49d93b-327a-4cfc-84b4-932a0526fccf",
+      :count 3}
+     {:key #datom[0 12 20 13194139533366 true],
+      :seg #uuid "5e49d93b-6668-4bca-bc35-c961f3f17078",
+      :count 14}
+     {:key #datom[0 13 8 13194139533366 true],
+      :seg #uuid "5e49d93b-0e05-4c0b-b682-6da4371192e3",
+      :count 25}
+     {:key #datom[0 14 54 13194139533366 true],
+      :seg #uuid "5e49d93b-897d-4491-8d81-fe9066e5abe9",
+      :count 2}
+     {:key #datom[20 39 :ref 13194139533366 true],
+      :seg #uuid "5e49d93b-fa5c-4c36-95bf-cc230f26413a",
+      :count 14}
+     {:key #datom[8 40 24 13194139533366 true],
+      :seg #uuid "5e49d93b-3235-4628-93b0-53a96f7d68eb",
+      :count 25}
+     {:key #datom[8 41 35 13194139533366 true],
+      :seg #uuid "5e49d93b-10f1-4bc6-a7b5-5c1d1a8b6321",
+      :count 25}
+     {:key #datom[10 42 38 13194139533366 true],
+      :seg #uuid "5e49d93b-29e4-4c68-be71-5f5adea076cc",
+      :count 1}
+     {:key #datom[39 44 true 13194139533366 true],
+      :seg #uuid "5e49d93b-c6a6-4675-886b-136f891673ae",
+      :count 2}
+     {:key #datom[54 46 48 13194139533366 true],
+      :seg #uuid "5e49d93b-72da-40ab-bb8f-7ae4c11cbf68",
+      :count 2}
+     {:key
+      #datom[54 47 "(clojure.core/fn [db e] (datomic.builtins/build-retract-args db e))" 13194139533366 true],
+      :seg #uuid "5e49d93b-58a8-4620-a152-7ecbd559dc3b",
+      :count 2}
+     {:key
+      #datom[13194139533366 50 #inst "1970-01-01T00:00:00.000-00:00" 13194139533366 true],
+      :seg #uuid "5e49d93b-8260-4874-9e4a-81e7f8b8d127",
+      :count 3}
+     {:key #datom[47 51 true 13194139533366 true],
+      :seg #uuid "5e49d93b-19f3-441f-9c87-6cd0c5f66f62",
+      :count 2}
+     {:key
+      #datom[0 62 "Name of the system partition. The system partition includes the core of datomic, as well as user schemas: type definitions, attribute definitions, partition definitions, and data function definitions." 13194139533375 true],
+      :seg #uuid "5e49d93b-bf02-479e-a5e6-25d7e05d7c7e",
+      :count 48}},
+   :raet
+   #{{:key #datom[0 11 0 13194139533366 true],
+      :seg #uuid "5e49d93b-2114-4aab-89ce-c4d0fd70c0fd",
+      :count 97}},
+   :fulltext nil}]
+ [:asOfT nil]
+ [:nextT 1000]
+ [:__meta nil]
+ [:indexingNextT nil]
+ [:id
+  "datomic:free://localhost:4334/5e49d937-87f4-497f-a58d-3be3cb9eb112"]
+ [:indexing nil]
+ [:__extmap nil]
+ [:keys
+  {0 :db.part/db,
+   62 :db/doc,
+   59 :db.type/uri,
+   20 :db.type/ref,
+   58 :db.type/float,
+   60 :db.type/bigint,
+   27 :db.type/bytes,
+   1 :db/add,
+   24 :db.type/boolean,
+   55 :db.fn/cas,
+   39 :fressian/tag,
+   46 :db/lang,
+   4 :db.part/user,
+   54 :db.fn/retractEntity,
+   15 :db/excise,
+   48 :db.lang/clojure,
+   50 :db/txInstant,
+   21 :db.type/keyword,
+   40 :db/valueType,
+   56 :db.type/uuid,
+   13 :db.install/attribute,
+   22 :db.type/long,
+   36 :db.cardinality/many,
+   41 :db/cardinality,
+   43 :db/isComponent,
+   61 :db.type/bigdec,
+   44 :db/index,
+   51 :db/fulltext,
+   25 :db.type/instant,
+   17 :db.excise/beforeT,
+   3 :db.part/tx,
+   12 :db.install/valueType,
+   2 :db/retract,
+   23 :db.type/string,
+   47 :db/code,
+   35 :db.cardinality/one,
+   19 :db.alter/attribute,
+   57 :db.type/double,
+   11 :db.install/partition,
+   9 :db.sys/reId,
+   14 :db.install/function,
+   45 :db/noHistory,
+   53 :db.bootstrap/part,
+   26 :db.type/fn,
+   16 :db.excise/attrs,
+   38 :db.unique/identity,
+   10 :db/ident,
+   18 :db.excise/before,
+   52 :db/fn,
+   42 :db/unique,
+   37 :db.unique/value,
+   8 :db.sys/partiallyIndexed,
+   49 :db.lang/java}]
+ [:memlog {:txes []}]
+ [:sinceT nil]
+ [:memidx {:eavt #{}, :avet #{}, :aevt #{}, :raet #{}, :fulltext {}}]
+ [:elements
+  [{:id 0, :kw :db.part/db}
+   nil
+   nil
+   {:id 3, :kw :db.part/tx}
+   {:id 4, :kw :db.part/user}
+   nil
+   nil
+   nil
+   {:id 8,
+    :kw :db.sys/partiallyIndexed,
+    :vtypeid 24,
+    :cardinality 35,
+    :isComponent false,
+    :unique nil,
+    :index false,
+    :storageHasAVET false,
+    :needsAVET false,
+    :noHistory false,
+    :fulltext false}
+   {:id 9,
+    :kw :db.sys/reId,
+    :vtypeid 20,
+    :cardinality 35,
+    :isComponent false,
+    :unique nil,
+    :index false,
+    :storageHasAVET false,
+    :needsAVET false,
+    :noHistory false,
+    :fulltext false}
+   {:id 10,
+    :kw :db/ident,
+    :vtypeid 21,
+    :cardinality 35,
+    :isComponent false,
+    :unique 38,
+    :index false,
+    :storageHasAVET true,
+    :needsAVET true,
+    :noHistory false,
+    :fulltext false}
+   {:id 11,
+    :kw :db.install/partition,
+    :vtypeid 20,
+    :cardinality 36,
+    :isComponent false,
+    :unique nil,
+    :index false,
+    :storageHasAVET false,
+    :needsAVET false,
+    :noHistory false,
+    :fulltext false}
+   {:id 12,
+    :kw :db.install/valueType,
+    :vtypeid 20,
+    :cardinality 36,
+    :isComponent false,
+    :unique nil,
+    :index false,
+    :storageHasAVET false,
+    :needsAVET false,
+    :noHistory false,
+    :fulltext false}
+   {:id 13,
+    :kw :db.install/attribute,
+    :vtypeid 20,
+    :cardinality 36,
+    :isComponent false,
+    :unique nil,
+    :index false,
+    :storageHasAVET false,
+    :needsAVET false,
+    :noHistory false,
+    :fulltext false}
+   {:id 14,
+    :kw :db.install/function,
+    :vtypeid 20,
+    :cardinality 36,
+    :isComponent false,
+    :unique nil,
+    :index false,
+    :storageHasAVET false,
+    :needsAVET false,
+    :noHistory false,
+    :fulltext false}
+   {:id 15,
+    :kw :db/excise,
+    :vtypeid 20,
+    :cardinality 35,
+    :isComponent false,
+    :unique nil,
+    :index false,
+    :storageHasAVET false,
+    :needsAVET false,
+    :noHistory false,
+    :fulltext false}
+   {:id 16,
+    :kw :db.excise/attrs,
+    :vtypeid 20,
+    :cardinality 36,
+    :isComponent false,
+    :unique nil,
+    :index false,
+    :storageHasAVET false,
+    :needsAVET false,
+    :noHistory false,
+    :fulltext false}
+   {:id 17,
+    :kw :db.excise/beforeT,
+    :vtypeid 22,
+    :cardinality 35,
+    :isComponent false,
+    :unique nil,
+    :index false,
+    :storageHasAVET false,
+    :needsAVET false,
+    :noHistory false,
+    :fulltext false}
+   {:id 18,
+    :kw :db.excise/before,
+    :vtypeid 25,
+    :cardinality 35,
+    :isComponent false,
+    :unique nil,
+    :index false,
+    :storageHasAVET false,
+    :needsAVET false,
+    :noHistory false,
+    :fulltext false}
+   {:id 19,
+    :kw :db.alter/attribute,
+    :vtypeid 20,
+    :cardinality 36,
+    :isComponent false,
+    :unique nil,
+    :index false,
+    :storageHasAVET false,
+    :needsAVET false,
+    :noHistory false,
+    :fulltext false}
+   {:id 20, :kw :db.type/ref, :fressian-tag :ref}
+   {:id 21, :kw :db.type/keyword, :fressian-tag :key}
+   {:id 22, :kw :db.type/long, :fressian-tag :int}
+   {:id 23, :kw :db.type/string, :fressian-tag :string}
+   {:id 24, :kw :db.type/boolean, :fressian-tag :bool}
+   {:id 25, :kw :db.type/instant, :fressian-tag :inst}
+   {:id 26, :kw :db.type/fn, :fressian-tag :datomic/fn}
+   {:id 27, :kw :db.type/bytes, :fressian-tag :bytes}
+   nil
+   nil
+   nil
+   nil
+   nil
+   nil
+   nil
+   nil
+   nil
+   nil
+   nil
+   {:id 39,
+    :kw :fressian/tag,
+    :vtypeid 21,
+    :cardinality 35,
+    :isComponent false,
+    :unique nil,
+    :index true,
+    :storageHasAVET true,
+    :needsAVET true,
+    :noHistory false,
+    :fulltext false}
+   {:id 40,
+    :kw :db/valueType,
+    :vtypeid 20,
+    :cardinality 35,
+    :isComponent false,
+    :unique nil,
+    :index false,
+    :storageHasAVET false,
+    :needsAVET false,
+    :noHistory false,
+    :fulltext false}
+   {:id 41,
+    :kw :db/cardinality,
+    :vtypeid 20,
+    :cardinality 35,
+    :isComponent false,
+    :unique nil,
+    :index false,
+    :storageHasAVET false,
+    :needsAVET false,
+    :noHistory false,
+    :fulltext false}
+   {:id 42,
+    :kw :db/unique,
+    :vtypeid 20,
+    :cardinality 35,
+    :isComponent false,
+    :unique nil,
+    :index false,
+    :storageHasAVET false,
+    :needsAVET false,
+    :noHistory false,
+    :fulltext false}
+   {:id 43,
+    :kw :db/isComponent,
+    :vtypeid 24,
+    :cardinality 35,
+    :isComponent false,
+    :unique nil,
+    :index false,
+    :storageHasAVET false,
+    :needsAVET false,
+    :noHistory false,
+    :fulltext false}
+   {:id 44,
+    :kw :db/index,
+    :vtypeid 24,
+    :cardinality 35,
+    :isComponent false,
+    :unique nil,
+    :index false,
+    :storageHasAVET false,
+    :needsAVET false,
+    :noHistory false,
+    :fulltext false}
+   {:id 45,
+    :kw :db/noHistory,
+    :vtypeid 24,
+    :cardinality 35,
+    :isComponent false,
+    :unique nil,
+    :index false,
+    :storageHasAVET false,
+    :needsAVET false,
+    :noHistory false,
+    :fulltext false}
+   {:id 46,
+    :kw :db/lang,
+    :vtypeid 20,
+    :cardinality 35,
+    :isComponent false,
+    :unique nil,
+    :index false,
+    :storageHasAVET false,
+    :needsAVET false,
+    :noHistory false,
+    :fulltext false}
+   {:id 47,
+    :kw :db/code,
+    :vtypeid 23,
+    :cardinality 35,
+    :isComponent false,
+    :unique nil,
+    :index false,
+    :storageHasAVET false,
+    :needsAVET false,
+    :noHistory false,
+    :fulltext true}
+   nil
+   nil
+   {:id 50,
+    :kw :db/txInstant,
+    :vtypeid 25,
+    :cardinality 35,
+    :isComponent false,
+    :unique nil,
+    :index true,
+    :storageHasAVET true,
+    :needsAVET true,
+    :noHistory false,
+    :fulltext false}
+   {:id 51,
+    :kw :db/fulltext,
+    :vtypeid 24,
+    :cardinality 35,
+    :isComponent false,
+    :unique nil,
+    :index false,
+    :storageHasAVET false,
+    :needsAVET false,
+    :noHistory false,
+    :fulltext false}
+   {:id 52,
+    :kw :db/fn,
+    :vtypeid 26,
+    :cardinality 35,
+    :isComponent false,
+    :unique nil,
+    :index false,
+    :storageHasAVET false,
+    :needsAVET false,
+    :noHistory false,
+    :fulltext false}
+   nil
+   {:id 54,
+    :kw :db.fn/retractEntity,
+    :lang 48,
+    :code
+    "(clojure.core/fn [db e] (datomic.builtins/build-retract-args db e))",
+    :f
+    #object[user$eval3771$fn__3772 0x13d10057 "user$eval3771$fn__3772@13d10057"]}
+   {:id 55,
+    :kw :db.fn/cas,
+    :lang 48,
+    :code
+    "(clojure.core/fn [db e a ov nv] (datomic.builtins/compare-and-swap db e a ov nv))",
+    :f
+    #object[user$eval3775$fn__3776 0x66944c7c "user$eval3775$fn__3776@66944c7c"]}
+   {:id 56, :kw :db.type/uuid, :fressian-tag :uuid}
+   {:id 57, :kw :db.type/double, :fressian-tag :double}
+   {:id 58, :kw :db.type/float, :fressian-tag :float}
+   {:id 59, :kw :db.type/uri, :fressian-tag :uri}
+   {:id 60, :kw :db.type/bigint, :fressian-tag :bigint}
+   {:id 61, :kw :db.type/bigdec, :fressian-tag :bigdec}
+   {:id 62,
+    :kw :db/doc,
+    :vtypeid 23,
+    :cardinality 35,
+    :isComponent false,
+    :unique nil,
+    :index false,
+    :storageHasAVET false,
+    :needsAVET false,
+    :noHistory false,
+    :fulltext true}]]
+ [:indexBasisT 63]
+ [:history {:eavt nil, :avet nil, :aevt nil, :raet nil, :fulltext nil}])

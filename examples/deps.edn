@@ -1,0 +1,5 @@
+{:deps {
+  com.datomic/datomic-free {:mvn/version "0.9.5697"}
+  com.datomic/client-cloud {:mvn/version "0.8.83"}
+  hara/object {:mvn/version "3.0.11"}}}
+
